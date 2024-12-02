@@ -255,6 +255,8 @@ async function importSeedData() {
 }
 
 async function main() {
+  process.exit(1)
+
   const { createStrapi, compileStrapi } = require('@strapi/strapi');
 
   const appContext = await compileStrapi();
